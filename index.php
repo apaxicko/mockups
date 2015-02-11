@@ -14,15 +14,15 @@
 		<div class="top">
 			<header class="header">
 
-				<h1 class="header__line">
+				<div class="header__line">
 					<img src="img/logo.png" alt="my journey | simple way to do it today" class="header__logo">
-				</h1>
-
-				<div class="header__social social">
-					<a href=""><i class="social__facebook social__item"></i></a>
-					<a href=""><i class="social__twitter social__item"></i></a>
-					<a href=""><i class="social__google social__item"></i></a>
 				</div>
+
+				<ul class="header__social social">
+					<li><a href=""><i class="social__facebook social__item"></i></a></li>
+					<li><a href=""><i class="social__twitter social__item"></i></a></li>
+					<li><a href=""><i class="social__google social__item"></i></a></li>
+				</ul>
 
 			</header>
 
@@ -44,27 +44,25 @@
 
 
 		<div class="features">
-			<div class="features__item features__item-1">
+			<div class="features__item features__item_1">
 				<img src="img/counter1.png" alt="light and fast">
 				<h3 class="features__title">light and fast</h3>
 				<div class="features__border border"></div>
 				<p class="features__text">Clean & Beautiful Design, HTML5 & CSS3
-				<br>
 				valid code provide good readability 
-				<br>
 				and smooth performance.</p>
 			</div>
 
-			<div class="features__item features__item-2">
+			<div class="features__item features__item_2">
 				<img src="img/counter2.png" alt="responsive design">
 				<h3 class="features__title">responsive design</h3>
 				<div class="features__border border"></div>
 				<p class="features__text">Responsive designed and Retina Ready. 
-				<br>MyJourney will look perfect on any 
-				<br>device you can imagine.</p>
+				MyJourney will look perfect on any 
+				device you can imagine.</p>
 			</div>
 
-			<div class="features__item features__item-3">
+			<div class="features__item features__item_3">
 				<img src="img/counter1.png" alt="easy to customize">
 				<h3 class="features__title">easy to customize</h3>
 				<div class="features__border border"></div>
@@ -75,19 +73,16 @@
 
 
 		<div class="content">
-			<div class="content__slider">
-				<ul class="slider__list">
-					<li><img src="img/text-pic.png" alt="slide 1" class="slider__pic"></li>
-					<li><img src="img/s2-pic1.jpg" alt="slide 2" class="slider__pic"></li>
-				</ul>
+			<div class="content__pic">				
+					<img src="img/text-pic.png" alt="slide 1" class="slider__pic">
 			</div>
 			
 			<div class="content__text">
 				<h2 class="content__title">So simple, so beautiful</h2>
-				<p class="content__article article-1">MyJourney HTML template is a landing page with clean structure and 
+				<p class="content__article article_1">MyJourney HTML template is a landing page with clean structure and 
 				beautiful minimalistic design. It can be useful in so many ways, 
 				including the most obvious, whis is to Tell a story.</p>
-				<p class="content__article article-2">Optimized and valid code using the latest HTML5 and CSS3 technologies 
+				<p class="content__article article_2">Optimized and valid code using the latest HTML5 and CSS3 technologies 
 				allows to make changes in the page structure of the template as it is
 				requared by your needs.</p>
 			</div>
@@ -97,11 +92,8 @@
 
 		<div class="info">
 			<div class="info_r">
-				<div class="info__slider">
-					<ul class="slider__list">
-						<li><img src="img/s2-pic1.jpg" alt="slide 1" class="slider__pic"></li>
-						<li><img src="img/s2-pic2.jpg" alt="slide 2" class="slider__pic"></li>
-					</ul>
+				<div class="info__pic">					
+						<img src="img/s2-pic1.jpg" alt="slide 1" class="slider__pic">					
 				</div>				
 			</div>	
 
@@ -139,17 +131,19 @@
 
 		<footer class="footer">
 			<h2 class="footer__title">Subscribe to our newsletter</h2>
-			<input type="text" class="footer__field" placeholder="Your email adress">
-			<button class="footer__btn"></button>
+			<form action="#" method="POST">
+				<input type="text" class="footer__field" placeholder="Your email adress">
+				<button class="footer__btn"></button>
+			</form>
 			<p class="footer__text">Subscribe now if you want to recieve updates and news via email.
 				<br>Don’t worry, it won’t happen often.
 			</p>
 			<div class="footer__border border"></div>
-			<div class="footer__social social">
-				<a href=""><i class="social__facebook social__item"></i></a>
-				<a href=""><i class="social__twitter social__item"></i></a>
-				<a href=""><i class="social__google social__item"></i></a>
-			</div>
+			<ul class="footer__social social">
+				<li><a href=""><i class="social__facebook social__item"></i></a></li>
+				<li><a href=""><i class="social__twitter social__item"></i></a></li>
+				<li><a href=""><i class="social__google social__item"></i></a></li>
+			</ul>
 			<img src="img/footer.jpg" alt="footer" class="footer__background">
 		</footer>
 
@@ -161,9 +155,15 @@
 	$(document).ready(function(){
 		$('.footer__field').placeholder();
 
-		width = document.body.clientWidth;   	
+		var width = document.body.clientWidth;   	
 
-    	$('.slider__list').bxSlider({auto:true,autoStart:true});
+    	$('.slider__list').bxSlider({
+    		auto:true,
+    		autoStart:true,
+    		speed:500,
+    		controls:false,
+    		pause:2000
+    	});
 	});
 </script>
 
