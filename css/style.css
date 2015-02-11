@@ -123,6 +123,10 @@ body{
 	line-height: 40px;
 }
 
+.top__title_first{
+	display: block;
+}
+
 .slider{
 	display: block;
 	width: 940px;
@@ -381,7 +385,7 @@ body{
 
 .footer__background{
 	position: relative;
-	bottom: -3px;
+	bottom: -5px;
 	margin-bottom: 0;
 }
 
@@ -455,6 +459,7 @@ body{
 
 .footer__social{
 	margin: 0px auto;
+	padding-left: 0;
 }
 
 .footer__background{
@@ -543,7 +548,7 @@ body{
 	}
 
 	.features__item{
-		width: 190px;
+		width: 180px;
 	}
 
 	.content{
