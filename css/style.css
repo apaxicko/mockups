@@ -618,8 +618,12 @@ body{
 		overflow: hidden;
 	}
 
-	.features__item{
-		width: 100%;
+	.features__item.features__item_1,
+	.features__item.features__item_2,
+	.features__item.features__item_3{
+		width: 539px;
+		float: none;
+		margin: 0 auto;
 	}
 
 	.info__title_l,.info__text_l{
@@ -632,7 +636,7 @@ body{
 		text-align: center;
 	}
 
-	.content__slider{
+	.content__pic{
 		display: block;
 		width: 320px;
 		height: 280px;
@@ -653,8 +657,10 @@ body{
 		margin-bottom: 17px;
 	}
 
-	.info__text_l{
-		width: 100%;
+	.content__article.article_1,
+	.content__article.article_2{
+		width: 80%;
+		margin-left: 0;
 	}
 
 	.article-1{
@@ -678,7 +684,7 @@ body{
 	}
 
 	.info__text_l{
-		width: 85%;
+		width: 90%;
 	}
 
 	.info__btn_l{
@@ -718,6 +724,10 @@ body{
 		width: 500px;
 		margin: 0 auto;
 	}
+
+	.header__social{
+		display: none;
+	} 
 
 	.features{
 		height: 100%;
